@@ -13,7 +13,7 @@ npm install --save matchete
 
 ### Usage
 
-```
+```js
 var matchete = require('matchete')
 matchete('foobar baz boz', 'foo') // true - partial match of the word
 matchete('foobar baz boz', 'foobar') // true - full match of the word
