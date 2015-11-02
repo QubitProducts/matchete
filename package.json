@@ -1,0 +1,24 @@
+{
+  "name": "matchete",
+  "version": "1.0.0",
+  "description": "Super simple string value matching",
+  "main": "matchete.js",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:QubitProducts/matchete.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Qubit Products",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/QubitProducts/matcheteissues"
+  },
+  "homepage": "https://github.com/QubitProducts/matchete",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "standard": "^5.3.1"
+  }
+}
