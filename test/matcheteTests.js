@@ -1,5 +1,6 @@
-/* global describe, it, expect */
+/* global describe, it */
 
+var expect = require('chai').expect
 var matchete = require('../matchete')
 
 describe('matchete', function () {
@@ -25,7 +26,7 @@ describe('matchete', function () {
   })
 
   it('should still work if input contains multiple spaces', function () {
-    expect(matchete('foobar baz', 'foo  ba  ')).to.be.true
-    expect(matchete('foobar baz', '  ba foo ')).to.be.false
+    expect(matchete('foobar baz', '  foo  ba  ')).to.be.true
+    expect(matchete('foobar baz', '  ba  foo ')).to.be.false
   })
 })

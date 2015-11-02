@@ -9,4 +9,4 @@ lint:
 	@$(BIN)/standard
 
 test: lint
-	@./node_modules/karma/bin/karma start --single-run=true
+	@$(BIN)/mocha
