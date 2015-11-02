@@ -5,7 +5,7 @@
   "main": "matchete.js",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:QubitProducts/matchete.git"
+    "url": "https://github.com/QubitProducts/matchete.git"
   },
   "scripts": {
     "test": "make test"
@@ -13,7 +13,7 @@
   "author": "Qubit Products",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/QubitProducts/matcheteissues"
+    "url": "https://github.com/QubitProducts/matchete/issues"
   },
   "homepage": "https://github.com/QubitProducts/matchete",
   "devDependencies": {
