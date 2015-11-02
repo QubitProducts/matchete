@@ -1,4 +1,4 @@
-# matchete
+# matchete [![Build Status](https://travis-ci.org/QubitProducts/matchete.svg)](https://travis-ci.org/QubitProducts/matchete)
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Matchete is a super simple case-insensitive JavaScript string matcher that can be used to work out if a value fully or partially contains the words in a search string.
