@@ -11,15 +11,20 @@ npm install --save matchete
 ```
 
 
-### Usage
-
+### API
+Matchete accepts a source string, search string and an optional delimiter. The default delimiter is a single space.
 ```js
-var matchete = require('matchete')
+matchete(sourceString, searchString, [delimiter])
+```
+
+### Examples
+```js
 matchete('foobar baz boz', 'foo') // true - partial match of the word
 matchete('foobar baz boz', 'foobar') // true - full match of the word
 matchete('foobar baz boz', 'foo ba') // true - partial match of multiple words
 matchete('foobar baz boz', 'foO bA BO') // true - case-insensitive match
 matchete('foobar baz boz', 'foo boz ba') // false - incorrect search word order
+matchete('foobar_baz_boz', 'fo_ba__boz', '_') // true - using _ as delimiter instead of space
 ```
 
 

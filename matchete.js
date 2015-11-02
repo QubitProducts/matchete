@@ -1,6 +1,6 @@
-function matchete (value, search) {
-  var valueParts = getParts(value)
-  var searchParts = getParts(search)
+function matchete (value, search, delim) {
+  var valueParts = getParts(value, delim)
+  var searchParts = getParts(search, delim)
   while (valueParts.length && searchParts.length) {
     if (valueParts[0].indexOf(searchParts[0]) > -1) {
       valueParts.shift()
@@ -18,8 +18,8 @@ function matchete (value, search) {
   return false
 }
 
-function getParts (value) {
-  return String(value).toLowerCase().split(' ').filter(rejectIfEmpty)
+function getParts (value, delim) {
+  return String(value).toLowerCase().split(delim || ' ').filter(rejectIfEmpty)
 }
 
 function rejectIfEmpty (value) {

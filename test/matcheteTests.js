@@ -25,8 +25,12 @@ describe('matchete', function () {
     expect(matchete('foobar', 'FoObaR')).to.be.true
   })
 
-  it('should still work if input contains multiple spaces', function () {
+  it('should work if input contains multiple spaces', function () {
     expect(matchete('foobar baz', '  foo  ba  ')).to.be.true
     expect(matchete('foobar baz', '  ba  foo ')).to.be.false
+  })
+
+  it('should work with custom delimiter', function () {
+    expect(matchete('foobar_baz_boz', 'fo_ba__boz', '_')).to.be.true
   })
 })
