@@ -1,6 +1,6 @@
 {
   "name": "matchete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Super simple string value matching",
   "main": "matchete.js",
   "repository": {
